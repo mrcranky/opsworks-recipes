@@ -1,6 +1,4 @@
-execute "apt update" do
-  command "apt-get update"
-end
+include_recipe "apt"
 
 package "puppetmaster-passenger"
 
