@@ -9,4 +9,8 @@ remote_directory "/etc/puppet" do
   action :create
 end
 
+template "/etc/puppet/puppet.conf" do
+	source "puppet.conf.erb"
+end
+
 Chef::Log.info("***Installed puppet master***")
