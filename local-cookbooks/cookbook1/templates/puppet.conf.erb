@@ -5,8 +5,8 @@ ssldir=/var/lib/puppet/ssl
 rundir=/var/run/puppet
 factpath=$vardir/lib/facter
 environmentpath=$confdir/environments
-dns_alt_names=<%= node['fqdn'] %>
-certname=<%= node['fqdn'] %>
+dns_alt_names=<%= node[:fqdn] %>
+certname=<%= node[:fqdn] %>
 
 [master]
 # These are needed when the puppetmaster is run by passenger
