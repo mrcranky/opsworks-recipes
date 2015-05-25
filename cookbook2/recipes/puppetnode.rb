@@ -1,1 +1,1 @@
-Chef::Log.info("***Installed puppet node***")
+Chef::Log.info("***About to install puppet node***")
